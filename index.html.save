@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tomaso Zanardi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tomaso Zanardi</h1>
+  <p>Ciao, grazie della visita al mio sito.</p>
+</div>
+
+
+<div class="row">
+  <div class="side">
+    <h2>Un po' di informazioni su di me</h2>
+    <h5>'The industrial revolution and its consequences have been a disaster for the huma race...':</h5>
+    <img src="../immagini/OI000043.JPG" width="204" height="153" alt="io nel bosco" />
+    <p>Qui sotto qualche altra foto mia (nel bosco e non), e degli sfondi per il desktop rilassanti.</p>
+    <h3>Immagini rilassanti e foto di uno scoppiato</h3>
+    <p></p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>I miei interessi</h2>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <h3>FILOSOFIA NATURALE</h3>
+    <p>un progetto che cominciero' a breve, dedicato alla comunicazione e alla divulgaione scientifica e alla diffusione della pratica del vipassana (meditazione theravada). Pratica spirituale, pensiero filosofico e attitudine scientifica possono essere tutt'uno in armonia e senza frizione.</p>
+    <br>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <h3>BOSCHI, ALPINISMO, BUSHCRAFTING...</H3>
+    <p>...E altre cose lontane dalla tecno-distopia contemporanea...</p>
+    <p>Se volete consigliarmi escursioni, prodotti da campeggio, o libri sul rapporto tra uomo e natura (o anche su altri temi), oppure se volete mandarmi attrezzatura da escursione (coltelli, fornelli, tende etc.) prodotti dalla vostra azienda da recensire, non esitate a contattarmi a:</p>
+  </div>
+</div>
+
+</body>
+</html>
