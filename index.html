@@ -1,228 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <link rel='stylesheet' type='text/css' href='CSS/index_style.css'>
 <title>Tomaso Zanardi</title>
+<link rel="icon" type="image/x-icon" href="favic.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #4CAF50;
-  color: white;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 80px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-
-
-/*Eliminates padding, centers the thumbnail */
-
-body, html {
-padding: 0;
-margin: 0;
-text-align: center;
-}
-
-/* Styles the thumbnail */
-
-a.lightbox img {
-height: 150px;
-border: 3px solid white;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-margin: 94px 20px 20px 20px;
-}
-
-/* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
-.lightbox-target {
-position: fixed;
-top: -100%;
-width: 100%;
-background: rgba(0,0,0,.7);
-width: 100%;
-opacity: 0;
--webkit-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--o-transition: opacity .5s ease-in-out;
-transition: opacity .5s ease-in-out;
-overflow: hidden;
- 
-}
-
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-
-.lightbox-target img {
-margin: auto;
-position: absolute;
-top: 0;
-left:0;
-right:0;
-bottom: 0;
-max-height: 0%;
-max-width: 0%;
-border: 3px solid white;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-box-sizing: border-box;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-  
-}
-
-/* Styles the close link, adds the slide down transition */
-
-a.lightbox-close {
-display: block;
-width:50px;
-height:50px;
-box-sizing: border-box;
-background: white;
-color: black;
-text-decoration: none;
-position: absolute;
-top: -80px;
-right: 0;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:before {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(45deg);
--moz-transform:rotate(45deg);
--o-transform:rotate(45deg);
-transform:rotate(45deg);
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:after {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(-45deg);
--moz-transform:rotate(-45deg);
--o-transform:rotate(-45deg);
-transform:rotate(-45deg);
-}
-
-/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
-.lightbox-target:target {
-opacity: 1;
-top: 0;
-bottom: 0;
-  overflow:scroll;
-}
-
-.lightbox-target:target img {
-max-height: 100%;
-max-width: 100%;
-}
-
-.lightbox-target:target a.lightbox-close {
-top: 0;
-}
-
-
-.responsive {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-}
-</style>
 </head>
 <body>
 
 <div class="header">
-  <h1>Tomaso Zanardi</h1>
+  <h1><img src="immagini/Ahimsa.png" alt="Ahimsa"/>Tomaso Zanardi<img src="immagini/Ahimsa.png" alt="Ahimsa"/></h1>
   <h2>Hey! Grazie di essere passato di qua</h2>
 </div>
 <div class="navbar">
-  <a href="CV.html">Curriculum Vitae</a>
-  <a href="Biblioteca.html">Biblioteca</a>
-  <a href="Blog.html">Blog</a>
-  <a href="FORMA.php">Contatti</a>
-  <a href="Donazioni.html" class="right">Donazioni</a>
+  <a href="CV/CV.html">Curriculum Vitae</a>
+  <a href="Biblioteca/login.html">Biblioteca</a>
+  <a href="Blog/Blog.html">Blog</a>
+  <a href="contatti/FORMA.php">Contatti</a>
+  <a href="Donazioni/Donazioni.html" class="right">Donazioni</a>
 </div>
 
 <div class="row">
@@ -238,7 +34,7 @@ top: 0;
      <a class="lightbox-close" href=""></a>
     </div>
     <p>Qui sotto qualche altra foto mia (nel bosco e non), e degli sfondi per il desktop rilassanti.</p>
-    <h3><a href="galleria.html">Immagini rilassanti e foto di uno scoppiato:</a></h3>
+    <h3><a href="galleria_personale/galleria.html">Immagini rilassanti e foto di uno scoppiato:</a></h3>
     <p></p>
       <a class="lightbox" href="#a">
        <img src="immagini/OI000044.JPG" width="204" height="153" alt="foresta della lama, primi di aprile 2019" />
@@ -281,8 +77,7 @@ top: 0;
     <a class="responsive">
     <img src="immagini/BANNER_TOM_FITNESS.png" width="800" height="130" class="responsive" alt="logo fitness" />
     </a>
-    <h3>ALCUNI PROGRAMMI PER LO SVILUPPO DELLA FORZA.</H3>
-      <h6>In progress...</h6>
+    <h3><a href="tomstrong/strongindex.html">ALCUNI PROGRAMMI PER LO SVILUPPO DELLA FORZA.</a></H3>
     <p>Alcuni programmi per mantenersi in forma, uno per principianti, fatto da me (split classico spingi-tira-gambe), uno molto popolare sviluppato dal powerlifter Johnny Candito, tradotto in Italiano da me, e alcuni consigli di nutrizione.</p>
 
  </div>

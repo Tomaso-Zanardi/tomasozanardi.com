@@ -29,19 +29,26 @@
 
 ?>
 
+<style>
+.label{font-family: Palatino Linotype;
 
+
+}
+
+</style>
 
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="2.css" media="all">
+    <title>Contatti</title>
+    <link rel="icon" type="image/x-icon" href="../immagini/favic.png">
+    <link rel="stylesheet" href="../CSS/2.css" media="all">
     
 </head>
 <div class="topnav">
-  <a href="index.html">Home</a>
+  <a href="../index.html">Home</a>
 </div>  
 <body>
 
@@ -49,22 +56,22 @@
             <form action="FORMA.php" method="POST" class="form">
                 <div class="form-group">
                     <label for="name" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome" tabindex="1" required>
+                    <input style="font-family: Palatino Linotype;" type="text" class="form-control" id="name" name="name" placeholder="Nome" tabindex="1" required>
                 </div>
                 <div class="form-group">
                     <label for="email" class="form-label">Indirizzo Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="la_tua_mail@blablabla.it" tabindex="2" required>
+                    <input style="font-family: Palatino Linotype;" type="email" class="form-control" id="email" name="email" placeholder="la_tua_mail@blablabla.it" tabindex="2" required>
                 </div>
                 <div class="form-group">
                     <label for="subject" class="form-label">Oggetto</label>
-                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Ciao Tom!..." tabindex="3" required>
+                    <input style="font-family: Palatino Linotype;" type="text" class="form-control" id="subject" name="subject" placeholder="Ciao Tom!..." tabindex="3" required>
                 </div>
                 <div class="form-group">
                     <label for="message" class="form-label">Messaggio</label>
-                    <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Scivi qui il tuo messaggio..." tabindex="4"></textarea>
+                    <textarea style="font-family: Palatino Linotype;" class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Scivi qui il tuo messaggio..." tabindex="4"></textarea>
                 </div>
                 <div>
-                    <button type="submit" class="btn">Invia il messaggio!</button>
+                    <button type="submit" class="btn" style="font-family: Palatino Linotype;">Invia il messaggio!</button>
                 </div>
             </form>
     </div>

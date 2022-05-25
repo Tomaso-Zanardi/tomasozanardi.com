@@ -7,8 +7,8 @@ body{
     justify-content:center;
     align-items:center;
     height:100vh;
-    font-family:"Raleway", sans-serif;
-    background-color:#4CAF50;
+    font-family: Palatino Linotype;
+    background: linear-gradient(to top right, #5aabd1 0%, #e98615 50%,  #4CAF50 100%);
 }
 
 .container{
